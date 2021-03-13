@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shane's POS</title>
+    <link rel="stylesheet" href="Assests/css/bootstrap.css">
+    <link rel="stylesheet" href="Assests/css/style.css" >
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="Assests/img/do-minimalist-logo-design-with-business-card-and-stationery__1_-removebg-preview.png" alt=""  height="34" class="d-inline-block align-top">
+            Shane's <span>POS</span>
+        </a>
+    </div>
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Orders</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Orders</a></li>
+                        <li><a class="dropdown-item" href="#">Customers</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Sales Analytics</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-info" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</nav>
+</nav>
+<hr class=" hr1">
+
+<div id="dash" class="dash">
+
+    <img class="img1" src="Assests/img/image.gif">
+    <h2>Dash<span>board</span></h2>
+
+
+    <button id="savecust" class=" btn btn-outline-primary b1 ">Save Customer</button>
+
+
+
+        <button id="makeord" class=" btn btn-outline-success b2 ">Make order</button>
+
+
+
+        <button id="Itms" class=" btn btn-outline-warning b3 ">Items</button>
+
+
+
+        <button class=" btn btn-outline-danger b4 ">Analytics</button>
+
+</div>
+
+<div id="ob1" class="ob1">
+
+</div>
+<!--===============================Customer=====================================================================-->
+<section id="cust" class="container">
+    <section class=" row">
+        <div class="col-sm">
+            <form class="addc">
+                <div class="form-floating mb-3 ">
+                    <input type="text" class="form-control" id="Customer ID" aria-describedby="Customer ID">
+                    <label for="Customer ID" >Customer ID</label>
+                </div>
+                <div class="form-floating mb-3 ">
+                    <input type="text" class="form-control" id="Customer Name" aria-describedby="Customer Name">
+                    <label for="Customer Name" >Customer Name</label>
+                </div>
+                <div class="form-floating mb-3 ">
+                    <input type="text" class="form-control" id="Customer Address" aria-describedby="Customer Address">
+                    <label for="Customer Address" >Customer Address</label>
+                </div>
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    <label class="form-check-label" for="exampleRadios1">
+                        Male
+                    </label>
+                </div>
+                <div class="form-check rfemale">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked>
+                    <label class="form-check-label" for="exampleRadios2">
+                        Female
+                    </label>
+                </div>
+                <br>
+                <button type="button" class="btn btn-primary">Save Customer</button>
+                <button type="button" class="btn btn-danger">Clear</button>
+            </form>
+        </div>
+
+        <div class="col-sm ">
+            <table class="table table-hover tb1">
+
+                <thead class="bg-primary text-light">
+                <tr>
+                    <th>Customer ID</th>
+                    <th>Customer Name</th>
+                    <th>Customer Address</th>
+                    <th>Gender</th>
+                </tr>
+                </thead>
+
+                <tbody>
+                <tr>
+                    <td>C001</td>
+                    <td>nimal</td>
+                    <td>Panadura</td>
+                    <td>Male</td>
+                </tr>
+
+                <tr>
+                    <td>C002</td>
+                    <td>Kamal</td>
+                    <td>Colombo</td>
+                    <td>Male</td>
+                </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+        <!--    <div class="row col-sm"></div>-->
+    </section>
+    <div class="box1">
+        <img src="Assests/img/icons8-user-groups-64.png">
+        <p class="fs-1  p11">150</p>
+        <p class="fs-5  p12">Customers</p>
+    </div>
+
+</section>
+
+
+
+<!--================================Order=======================================================================-->
+<section id="ord" class="ob2">
+
+    <div class="items1">
+        <div class="item01">
+            <img src="Assests/img/CI-FN3-GROBN-400-removebg-preview.png">
+            <p class="fs-5 fw-bolder">Nicaraguan Cigar</p>
+        </div>
+        <div class="item02">
+            <img src="Assests/img/ezgif.com-gif-maker-removebg-preview.png">
+            <p class="fs-5 fw-bolder">Camacho Cigar</p>
+        </div>
+        <div class="item03">
+            <img src="Assests/img/smok-morph_2-default_2-removebg-preview.png">
+            <p class="fs-5 fw-bolder">Morph-2</p>
+        </div>
+        <div class="item04">
+            <img src="Assests/img/geek_vape_aegis_mini_80w_tc_starter_kit-removebg-preview.png">
+            <p class="fs-5 fw-bolder">Vape</p>
+        </div>
+
+        <div class="item01-1">
+            <img src="Assests/img/CI-FN3-GROBN-400-removebg-preview.png">
+            <p class="fs-6  para1-1">Nicaraguan</p>
+            <p class="fs-3 fw-bolder para1-2">$ 8</p>
+            <button type="button" class="btn btn-outline-danger fs-6 fw-bolder b5">-</button>
+            <p class="fs-4 fw-bolder para1-3">2</p>
+            <button type="button" class="btn btn-outline-danger fs-6 fw-bolder b6">+</button>
+        </div>
+
+        <div class="item02-1">
+            <img src="Assests/img/smok-morph_2-default_2-removebg-preview.png">
+            <p class="fs-6  para2-1">MORPH 2</p>
+            <p class="fs-3 fw-bolder para2-2">$ 10</p>
+            <button type="button" class="btn btn-outline-danger fs-6 fw-bolder b7">-</button>
+            <p class="fs-4 fw-bolder para2-3">5</p>
+            <button type="button" class="btn btn-outline-danger fs-6 fw-bolder b8">+</button>
+        </div>
+
+        <div class="item03-1">
+            <img src="Assests/img/geek_vape_aegis_mini_80w_tc_starter_kit-removebg-preview.png">
+            <!--        <img src="Assests/img/smok-morph_2-default_2-removebg-preview.png">-->
+            <p class="fs-6  para3-1">Vape</p>
+            <p class="fs-3 fw-bolder para3-2">$ 15</p>
+            <button type="button" class="btn btn-outline-danger fs-6 fw-bolder b9">-</button>
+            <p class="fs-4 fw-bolder para3-3">8</p>
+            <button type="button" class="btn btn-outline-danger fs-6 fw-bolder b11">+</button>
+        </div>
+
+        <div class="item04-1">
+            <p class="fs-5  para4-1">Tax</p>
+            <p class="fs-5  para4-1-1">$ 2</p>
+            <p class="fs-3 fw-bolder para4-2">Total</p>
+            <p class="fs-3 fw-bolder para4-2-2">$ 33</p>
+            <button class=" btn btn-outline-primary b1 ">Checkout</button>
+        </div>
+    </div>
+
+</section>
+
+<!--================================Items=======================================================================-->
+
+<section id="itm" class="ob3">
+
+    <div class="items1">
+        <div class="item01">
+            <img src="Assests/img/CI-FN3-GROBN-400-removebg-preview.png">
+            <p class="fs-5 fw-bolder">Nicaraguan Cigar</p>
+        </div>
+        <div class="item02">
+            <img src="Assests/img/ezgif.com-gif-maker-removebg-preview.png">
+            <p class="fs-5 fw-bolder">Camacho Cigar</p>
+        </div>
+        <div class="item03">
+            <img src="Assests/img/smok-morph_2-default_2-removebg-preview.png">
+            <p class="fs-5 fw-bolder">Morph-2</p>
+        </div>
+        <div class="item04">
+            <img src="Assests/img/geek_vape_aegis_mini_80w_tc_starter_kit-removebg-preview.png">
+            <p class="fs-5 fw-bolder">Vape</p>
+        </div>
+    </div>
+
+    <div class="box6">
+        <img src="Assests/img/icons8-joint-100.png">
+        <p class="fs-1  p11">900</p>
+        <p class="fs-5  p12">Items</p>
+    </div>
+
+</section>
+
+
+<script src="Assests/js/bootstrap.js"></script>
+<script>
+
+    var customer = document.getElementById("cust");
+    var order = document.getElementById("ord");
+    var Item = document.getElementById("itm")
+
+    customer.style.display='none';
+    order.style.display='none';
+    Item.style.display='none';
+
+    var Btncustomer = document.getElementById("savecust");
+    Btncustomer.addEventListener('click',function (){
+        order.style.display='none';
+        Item.style.display='none';
+        customer.style.display='block';
+    });
+
+    var Btnorder = document.getElementById("makeord");
+    Btnorder.addEventListener('click',function (){
+        customer.style.display='none';
+        Item.style.display='none';
+        order.style.display='block';
+    });
+
+    var Btnitem = document.getElementById("Itms");
+    Btnitem.addEventListener('click',function (){
+        customer.style.display='none';
+        order.style.display='none';
+        Item.style.display='block';
+    });
+
+</script>
+</body>
+</html>
